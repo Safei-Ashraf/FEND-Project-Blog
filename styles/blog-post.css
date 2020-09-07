@@ -1,0 +1,72 @@
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 'header header header header header header' 'menu main main main image image'
+		'footer footer footer footer footer footer';
+	padding: 10px;
+	grid-row-gap: 30px;
+	grid-column-gap: 20px;
+}
+.header {
+	grid-area: header;
+}
+.author-info {
+	grid-area: menu;
+}
+.post-content {
+	grid-area: main;
+	margin-bottom: 180px;
+}
+.image {
+	grid-area: image;
+	border: 1px solid #ddd;
+}
+.image img {
+	width: 100%;
+}
+.footer {
+	grid-area: footer;
+	width: 100vw;
+}
+.description {
+	padding: 10px;
+	margin-top: 20px;
+	text-align: left;
+}
+.post {
+	margin: 7px;
+	font-size: 20px;
+}
+.post span {
+	font-style: italic;
+	font-weight: lighter;
+	text-decoration: underline;
+}
+#post-title {
+	letter-spacing: 0.3em;
+}
+/*Author Section Styling*/
+.author-info .author-image img {
+	width: 100%;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border: 2px snow solid;
+	margin-bottom: 10px;
+}
+.author-title {
+	margin: 5px;
+}
+.author-name {
+	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+	font-size: 24px;
+}
+.author-company {
+	color: steelblue;
+	font-weight: bolder;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
